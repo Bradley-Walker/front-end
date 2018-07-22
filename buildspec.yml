@@ -13,7 +13,7 @@ phases:
     post_build:
          commands:
             - printenv
-            - aws s3 sync --delete . s3://assignment-bucket-1-bwalker
+            - aws s3 sync --delete dist/CDDemo s3://assignment-bucket-1-bwalker
             - echo Build completed on `date`
 artifacts:
     files:
